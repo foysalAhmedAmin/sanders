@@ -1,0 +1,11 @@
+.btn{
+    &-icon{
+        & span{
+            flex: 0 0 auto;
+            width: 24px;
+        }
+        & img{
+            max-width: 24px;
+        }
+    }
+}

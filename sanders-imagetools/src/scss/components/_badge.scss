@@ -1,0 +1,19 @@
+// badge-css-start
+
+.badge{
+    font-size: 12px;
+    font-weight: 600;
+    color:$white;
+    padding: 4px 4px;
+    line-height: 1.4;
+    border-radius: 0px;
+    // topseller
+    &-topseller{
+        background-color: #228DCA;
+    }
+
+    // repeat
+    &-repet{
+        background: #5BBA4A;
+    }
+}

@@ -1,0 +1,116 @@
+// cards
+
+.card{
+    position: relative;
+    text-decoration: none;
+    transition: $transition-base;
+    &:hover{
+        border-color: $primary;
+    }
+
+    &-body{
+        & h6{
+            transition: $transition-base;
+        }
+    }
+
+
+    // card-product
+    &-product{
+        &:hover{
+            border-color: $primary;
+            transition: $transition-base;
+            box-shadow: $box-shadow;
+            & .card-body{
+                & h6{
+                    color: $primary !important;
+                }
+            }
+        }
+        & .card-img{
+            min-height: 181px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img{
+                max-width: 100%;
+            }
+        }
+        & .card-fav{
+            padding: 0px;
+            border: none;
+            background: transparent;
+            position: absolute;
+            right: 11px;
+            top: 11px;
+        }
+        & .card-body{
+            padding-left: 0px;
+            padding-right: 0px;
+            
+        }
+    }
+
+    // card-package
+    &-package{
+        padding: 12px;
+        &:hover{
+            box-shadow: $box-shadow;
+            & .card-body{
+                & h6{
+                    color: $primary;
+                }
+            }
+        }
+        & .badge{
+            position: absolute;
+            border-top-right-radius: 1px;
+            border-bottom-right-radius: 1px;
+            &-topseller{
+                top: 16px;
+                left: 0px;
+            }
+            &-repet{
+                top: 46px;
+                left: 0px;
+            }
+        }
+        & .card-img{
+            min-height: 117px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            & img{
+                max-width: 100%;
+            }
+        }
+        & .card-body{
+            min-height: 46px;
+            & h6{
+                transition: $transition-base;
+            }
+        }
+    }
+
+    // card-theme
+    &-theme{
+        &:hover{
+            & .card-body{
+                & h6{
+                    color: $primary;
+                }
+            }
+        }
+        & .card-img{
+            height: 150px;
+            width: 100%;
+            & img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}

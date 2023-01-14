@@ -1,0 +1,49 @@
+$font-family-base: 'Figtree';
+$gray-900: #222121;
+$font-weight-medium: 600;
+$primary: #C61618;
+$headings-color: $gray-900;
+
+
+
+// button-overwrite variables
+$btn-padding-y: 0.625rem;
+$btn-padding-x: 1rem;
+$btn-line-height: 1.5rem;
+
+$btn-font-weight: 500;
+$btn-box-shadow: none;
+$btn-focus-width: none;
+$btn-focus-box-shadow: none;
+$btn-disabled-opacity: .65;
+$btn-active-box-shadow: none;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: 0.125rem;
+
+// input-varibales
+$input-border-radius: 2px;
+$input-border-color: #A9A9A9;
+$input-box-shadow: none;
+$input-focus-box-shadow: none;
+
+// containers
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1224px
+);
+
+
+// card-variable
+$card-border-color: #D9D9D9;
+$card-border-radius: 2px;
+
+
+// box-shadow
+$box-shadow: 0px 24px 14px rgba(0, 0, 0, 0.01),
+0px 11px 11px rgba(0, 0, 0, 0.02),
+0px 3px 6px rgba(0, 0, 0, 0.03),
+0px 0px 0px rgba(0, 0, 0, 0.03);

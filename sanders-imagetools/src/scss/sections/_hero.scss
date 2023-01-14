@@ -1,0 +1,19 @@
+.hero{
+    &-single{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 162px 0px;
+    }
+
+    & .slider-nav{
+        & button{
+            left: 72px;
+            z-index: 111;
+            &.next{
+                left: auto;
+                right: 72px;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+/*
+** theme base file like fonts/ core/ 
+*/
+@import './base/fonts';
+
+
+
+/*
+** Bootstrap 5.2.2 inportent files including 
+*/
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+
+// 2. Include any default variable overrides here
+@import './base/overwriteVariable';
+
+
+
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../../node_modules/bootstrap/scss/variables";
+
+
+
+// 4. Include any default map overrides here
+// spacings
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25, //4px
+    2: $spacer * .5, //8px
+    3: $spacer, //16px
+    4: $spacer * 1.5, //24px
+    5: $spacer * 1.75, //28px
+    6: $spacer * 2, //32px
+    7: $spacer * 2.25, //36px
+    8: $spacer * 2.5, //40px
+    9: $spacer * 3, //48px
+    10: $spacer * 3.5, //56px
+    11: $spacer * 4, //64px
+    12: $spacer * 4.5, //72px
+    13: $spacer * 5, //80px
+    14: $spacer * 5.5, //88px
+    15: $spacer * 6, //96px
+    16: $spacer * 6.5, //104px
+    17: $spacer * 7, //112px
+    18: $spacer * 7.5, //120px
+    19: $spacer * 8, //128px
+    20: $spacer * 8.5, //136px
+    21: $spacer * 9, //144px
+);
+$spacers: map-merge($spacers, $spacers);
+
+
+
+// 5. Include remainder of required parts
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// 8. Add additional custom code here
+@import './base/core';
+
+// components
+@import './components/index';
+
+// sections
+@import './sections/index';
+
+
+.fw-medium{
+    font-weight:  $font-weight-medium;
+}
+
+.bg-gray-light{
+    background: #FBFBFB !important;
+}
+.bg-gray{
+    background: #434343 !important;
+}
+
+.text-gray{
+    color: #8D8C8C !important;
+}
+.text-gray-medium{
+    color: $gray-500 !important;
+}
+
+// sep
+
